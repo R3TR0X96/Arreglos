@@ -15,7 +15,15 @@ public class Tets {
 		lista[4] = 4;
 		
 		ArregloUnidimesional objetoLista = new ArregloUnidimesional(lista);
+		
 		System.out.println(objetoLista.traerElMayor());
+		System.out.println(objetoLista.traerElMenor());
+		System.out.println(objetoLista.calcularPromedio());
+		System.out.println(Arrays.toString(objetoLista.ordenarAcendente()));
+		System.out.println(Arrays.toString(objetoLista.ordenarDesendente()));
+		System.out.println(objetoLista.traerFrecuencia(5));
+		System.out.println(objetoLista.traerModa());
+		
 		
 		
 		System.out.println(Arrays.toString(lista));
