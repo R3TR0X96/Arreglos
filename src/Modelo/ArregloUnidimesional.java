@@ -17,14 +17,13 @@ public class ArregloUnidimesional {
 	}
 
 	public int traerElMenor() {
-		int aux = 0;
 		int aux2 = lista[0];
 		for (int i = 0; i < lista.length; i++) {
 			if (aux2 > lista[i]) {
-				aux = lista[i];
+				aux2 = lista[i];
 			}
 		}
-		return aux;
+		return aux2;
 	}
 
 	public int traerElMayor() {
@@ -38,19 +37,19 @@ public class ArregloUnidimesional {
 	}
 
 	public double calcularPromedio() {
-		int aux = 0;
-		for (int i = 0; i > lista.length; i++) {
+		float aux = 0;
+		for (int i = 0; i < lista.length; i++) {
 			aux += lista[i];
 
 		}
-
-		return aux / lista.length;
+		float resultado = aux / lista.length;
+		return resultado;
 	}
 
 	public int[] ordenarAcendente() {
 		int aux;
 		for (int i = 0; i <= lista.length; i++) {
-			for (int j = 0; j <= lista.length - 1; j++) {
+			for (int j = 0; j < lista.length - 1; j++) {
 				if (lista[j] > lista[j + 1]) {
 					aux = lista[j];
 					lista[j] = lista[j + 1];
@@ -66,7 +65,7 @@ public class ArregloUnidimesional {
 
 		int aux;
 		for (int i = 0; i <= lista.length; i++) {
-			for (int j = 0; j <= lista.length - 1; j++) {
+			for (int j = 0; j < lista.length - 1; j++) {
 				if (lista[j] < lista[j + 1]) {
 					aux = lista[j];
 					lista[j] = lista[j + 1];
